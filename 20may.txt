@@ -1,0 +1,30 @@
+show databases;
+create database tuesday;
+use tuesday;
+drop table category;
+create table category(
+ c_id int primary key,
+ c_name varchar(25)
+
+);
+insert into category values (101,'electronic');
+
+show tables from tuesday;
+
+select * from category
+
+
+
+CREATE TABLE products (
+	p_id INT PRIMARY KEY,
+    p_name VARCHAR(25),
+    c_id INT,
+    FOREIGN KEY (c_id) REFERENCES category(c_id) on update cascade
+);
+
+
+desc products;
+drop table products;
+
+insert into products values( 501 ,'iphone', 101);
+select * from products
