@@ -1,0 +1,59 @@
+package MyPackage;                        // Java package names are conventionally lower-case
+
+import java.sql.*;
+
+public class DBConnection {
+    public static void main(String[] args) {
+        String url      = "jdbc:mysql://localhost:3306/vit?serverTimezone=UTC";
+        String user     = "root";
+        String password = "Yabro@123";
+
+        try (Connection con = DriverManager.getConnection(url, user, password)) {
+            System.out.println("Connected! → " + con);
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("select * from student");
+            while(rs.next())
+            {
+            	System.out.println(rs.getInt(1) + " " + rs.getString(2));
+            }
+            con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();          // shows exact cause
+        }
+    }
+}
+
+
+package crud_operation;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class CRUD_Operations {
+
+	public static void main(String[] args) {
+		CRUD_Operations objTest=new CRUD_Operations();
+  
+	objTest.create_data("103", "manoj", 55);
+	objTest.create_data("104", "karthick", 65);
+    
+}
+
+public void create_data(String sl_no,String name,int mark){
+	DB_Connection obj_DB_Connection=new DB_Connection();
+	Connection connection=obj_DB_Connection.get_connection();
+	PreparedStatement ps=null;
+	try {
+		String query="insert into student values (?,?,?)";
+		ps=connection.prepareStatement(query);
+		ps.setString(1, sl_no);
+		ps.setString(2, name);
+		ps.setInt(3, mark);
+		System.out.println(ps);
+		ps.executeUpdate();
+	} catch (Exception e) {
+		System.out.println(e);
+	}
+}
+
+}

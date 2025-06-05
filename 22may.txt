@@ -1,0 +1,116 @@
+create database vit ;
+CREATE TABLE Worker (
+	WORKER_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	FIRST_NAME CHAR(25),
+	LAST_NAME CHAR(25),
+	SALARY INT(15),
+	JOINING_DATE DATETIME,
+	DEPARTMENT CHAR(25)
+);
+use vit;
+INSERT INTO Worker 
+	(WORKER_ID, FIRST_NAME, LAST_NAME, SALARY, JOINING_DATE, DEPARTMENT) VALUES
+		(001, 'Monika', 'Arora', 100000, '14-02-20 09.00.00', 'HR'),
+		(002, 'Niharika', 'Verma', 80000, '14-06-11 09.00.00', 'Admin'),
+		(003, 'Vishal', 'Singhal', 300000, '14-02-20 09.00.00', 'HR'),
+		(004, 'Amitabh', 'Singh', 500000, '14-02-20 09.00.00', 'Admin'),
+		(005, 'Vivek', 'Bhati', 500000, '14-06-11 09.00.00', 'Admin'),
+		(006, 'Vipul', 'Diwan', 200000, '14-06-11 09.00.00', 'Account'),
+		(007, 'Satish', 'Kumar', 75000, '14-01-20 09.00.00', 'Account'),
+		(008, 'Geetika', 'Chauhan', 90000, '14-04-11 09.00.00', 'Admin');
+        
+select * from Worker where SALARY between 75000 and 100000 ;
+select * from Worker where SALARY not between 75000 and 100000 ;
+select * from Worker where SALARY between 100000 and 200000 and WORKER_ID not in (001,002,003) ;
+select min(SALARY) from Worker ;
+select max(Salary) from Worker;
+select count(WORKER_ID) from Worker where SALARY > 100000 ;
+select avg(WORKER_ID) from Worker where SALARY > 100000 ;
+select sum(WORKER_ID) from Worker where SALARY > 100000 ;
+
+CREATE TABLE WorkerOne (
+	WORKER_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	FIRST_NAME CHAR(25),
+	LAST_NAME CHAR(25),
+	SALARY INT(15),
+	JOINING_DATE DATETIME,
+	DEPARTMENT CHAR(25)
+);
+desc WorkerOne ;
+INSERT INTO WorkerOne 
+	(WORKER_ID, FIRST_NAME, LAST_NAME, SALARY, JOINING_DATE, DEPARTMENT) VALUES
+		(001, 'Monika', 'Arora', 100000, '14-02-20 09.00.00', 'HR'),
+		(009, 'Menglin', 'Ozdora', 800000, '15-02-16 07.00.00', 'Account'),
+		(003, 'Vishal', 'Singhal', 300000, '14-02-20 09.00.00', 'HR'),
+		(004, 'Amitabh', 'Singh', 500000, '14-02-20 09.00.00', 'Admin'),
+		(005, 'Vivek', 'Bhati', 500000, '14-06-11 09.00.00', 'Admin'),
+		(002, 'Sulfren', 'Jizer', 150000, '18-12-08 04.00.00', 'Admin'),
+		(007, 'Satish', 'Kumar', 75000, '14-01-20 09.00.00', 'Account'),
+		(008, 'Geetika', 'Chauhan', 90000, '14-04-11 09.00.00', 'Admin');
+
+select * from WorkerOne ;
+select SALARY FROM Worker UNION SELECT SALARY FROM WorkerOne ;
+select SALARY FROM Worker UNION ALL SELECT SALARY FROM WorkerOne ;
+select SALARY FROM Worker where FIRST_NAME='Geetika' union select SALARY FROM WorkerOne where FIRST_NAME='Geetika' ;
+select First_name , Salary,
+case
+	when Salary > 300000 then 'Rich People'
+    when Salary < 300000 && Salary <= 100000 then 'middle layer'
+    when Salary < 100000 then 'poor people'
+    else 'data not found'
+end
+as status_check_basedSalary
+from Worker ;
+
+select * from Worker where Salary < 200000 order by salary ;
+select * from Worker where First_name like '%' ;
+select * from Worker where First_name like 'Si%l' ;
+select * from Worker where First_name like '_i%l' ;
+select * from Worker where First_name like '%a_a' ;
+select * from Worker where First_name like '_' ;
+
+select max(department) from Worker where department;
+
+SELECT COUNT(department)
+FROM Worker
+GROUP BY department
+ORDER BY COUNT(department) DESC
+LIMIT 1;
+
+select department,count(department) from Worker group by department having count(department)>3;
+select first_name,department from Worker where salary = (select max(salary) from Worker);
+SELECT department 
+FROM Worker 
+GROUP BY department 
+HAVING SUM(salary) = (
+    SELECT MAX(dept_total)
+    FROM (
+        SELECT SUM(salary) AS dept_total
+        FROM Worker 
+        GROUP BY department
+    ) AS dept_sums
+);
+SELECT first_name, department 
+FROM Worker 
+WHERE salary > (SELECT AVG(salary) FROM Worker);
+SELECT first_name, department 
+FROM Worker 
+WHERE salary = (
+    SELECT DISTINCT salary 
+    FROM Worker 
+    ORDER BY salary DESC 
+    LIMIT 1 OFFSET 1
+);
+
+create table student(
+s_id int,
+s_name varchar(25)
+);
+insert into student values (101,'jayanth'),(102,'karthik'),(103,'Praveen'),(105,'mahesh'),(106,'Arun');
+create table address(
+s_id int,
+s_address varchar(25));
+insert into address values (101,'coimbatore'),(104,'chennai'),(105,'pune');
+
+select * from student cross join address ;
+select * from student 
