@@ -1,0 +1,59 @@
+package connection ;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.FindIterable;
+import org.bson.Document;
+import static com.mongodb.client.model.Filters.*;
+import com.mongodb.Block;
+
+public class Operatoins {
+
+    public static void main(String[] args) {
+        MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
+        MongoDatabase database = mongoClient.getDatabase("myDb");
+        MongoCollection<Document> collection = database.getCollection("products");
+
+        FindIterable<Document> result = collection.find(and(gt("price", 700), lt("price", 900)));
+
+        for (Document doc : result) {
+            System.out.println(doc);
+        }
+    }
+}
+
+----------------------------------------------------------------------------------------------------
+
+package connection ;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.FindIterable;
+import org.bson.Document;
+import static com.mongodb.client.model.Filters.*;
+import com.mongodb.Block;
+
+public class Operatoins {
+
+    public static void main(String[] args) {
+        MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
+        MongoDatabase database = mongoClient.getDatabase("myDb");
+        MongoCollection<Document> collection = database.getCollection("products");
+
+        int totalPrice = 0;
+        int count = 0 ;
+
+        for (Document doc : collection.find()) {
+            Integer price = doc.getInteger("price");
+            if (price != null) {
+                totalPrice += price;
+                count ++ ;
+            }
+        }
+
+        System.out.println("Average Price: " + totalPrice/count);
+    }
+}
+--------------------------------------------------------------------------------------------------
