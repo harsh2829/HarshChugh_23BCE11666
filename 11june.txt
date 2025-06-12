@@ -23,7 +23,7 @@ public class Operatoins {
     }
 }
 
-----------------------------------------------------------------------------------------------------
+
 
 package connection ;
 import com.mongodb.client.MongoClient;
@@ -56,4 +56,3 @@ public class Operatoins {
         System.out.println("Average Price: " + totalPrice/count);
     }
 }
---------------------------------------------------------------------------------------------------
