@@ -1,0 +1,420 @@
+[{
+  "_id": {
+    "$oid": "684c458016ab236c5c063dfe"
+  },
+  "title": "The God of Small Things",
+  "author": "Arundhati Roy",
+  "year": 1997,
+  "genre": "Fiction",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063dff"
+  },
+  "title": "Midnight's Children",
+  "author": "Salman Rushdie",
+  "year": 1981,
+  "genre": "Historical Fiction",
+  "available": false
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e00"
+  },
+  "title": "The Blue Umbrella",
+  "author": "Ruskin Bond",
+  "year": 1974,
+  "genre": "Children's Literature",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e01"
+  },
+  "title": "Malgudi Days",
+  "author": "R.K. Narayan",
+  "year": 1943,
+  "genre": "Short Stories",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e02"
+  },
+  "title": "In Custody",
+  "author": "Anita Desai",
+  "year": 1984,
+  "genre": "Drama",
+  "available": false
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e03"
+  },
+  "title": "Train to Pakistan",
+  "author": "Khushwant Singh",
+  "year": 1956,
+  "genre": "Historical Fiction",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e04"
+  },
+  "title": "The White Tiger",
+  "author": "Aravind Adiga",
+  "year": 2008,
+  "genre": "Contemporary Fiction",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e05"
+  },
+  "title": "Shantaram",
+  "author": "Gregory David Roberts",
+  "year": 2003,
+  "genre": "Adventure",
+  "available": false
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e06"
+  },
+  "title": "The Namesake",
+  "author": "Jhumpa Lahiri",
+  "year": 2003,
+  "genre": "Fiction",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e07"
+  },
+  "title": "Interpreter of Maladies",
+  "author": "Jhumpa Lahiri",
+  "year": 1999,
+  "genre": "Short Stories",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e08"
+  },
+  "title": "The Immortals of Meluha",
+  "author": "Amish Tripathi",
+  "year": 2010,
+  "genre": "Mythology",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e09"
+  },
+  "title": "Chanakya's Chant",
+  "author": "Ashwin Sanghi",
+  "year": 2010,
+  "genre": "Historical Fiction",
+  "available": false
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e0a"
+  },
+  "title": "Sacred Games",
+  "author": "Vikram Chandra",
+  "year": 2006,
+  "genre": "Thriller",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e0b"
+  },
+  "title": "Sea of Poppies",
+  "author": "Amitav Ghosh",
+  "year": 2008,
+  "genre": "Historical Fiction",
+  "available": false
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e0c"
+  },
+  "title": "The Hungry Tide",
+  "author": "Amitav Ghosh",
+  "year": 2004,
+  "genre": "Adventure",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e0d"
+  },
+  "title": "Palace of Illusions",
+  "author": "Chitra Banerjee Divakaruni",
+  "year": 2008,
+  "genre": "Mythology",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e0e"
+  },
+  "title": "The Great Indian Novel",
+  "author": "Shashi Tharoor",
+  "year": 1989,
+  "genre": "Satire",
+  "available": false
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e0f"
+  },
+  "title": "Q&A",
+  "author": "Vikas Swarup",
+  "year": 2005,
+  "genre": "Fiction",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e10"
+  },
+  "title": "The Last Mughal",
+  "author": "William Dalrymple",
+  "year": 2006,
+  "genre": "History",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e11"
+  },
+  "title": "City of Djinns",
+  "author": "William Dalrymple",
+  "year": 1993,
+  "genre": "Travel",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e12"
+  },
+  "title": "The Zoya Factor",
+  "author": "Anuja Chauhan",
+  "year": 2008,
+  "genre": "Romance",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e13"
+  },
+  "title": "Battle for Bittora",
+  "author": "Anuja Chauhan",
+  "year": 2010,
+  "genre": "Romance",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e14"
+  },
+  "title": "The Rozabal Line",
+  "author": "Ashwin Sanghi",
+  "year": 2007,
+  "genre": "Thriller",
+  "available": false
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e15"
+  },
+  "title": "Kalpana Chawla: A Life",
+  "author": "Anil Padmanabhan",
+  "year": 2003,
+  "genre": "Biography",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e16"
+  },
+  "title": "Wings of Fire",
+  "author": "A.P.J. Abdul Kalam",
+  "year": 1999,
+  "genre": "Autobiography",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e17"
+  },
+  "title": "Ignited Minds",
+  "author": "A.P.J. Abdul Kalam",
+  "year": 2002,
+  "genre": "Inspirational",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e18"
+  },
+  "title": "The Monk Who Sold His Ferrari",
+  "author": "Robin Sharma",
+  "year": 1997,
+  "genre": "Self-help",
+  "available": false
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e19"
+  },
+  "title": "You Can Win",
+  "author": "Shiv Khera",
+  "year": 1998,
+  "genre": "Self-help",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e1a"
+  },
+  "title": "Stay Hungry Stay Foolish",
+  "author": "Rashmi Bansal",
+  "year": 2008,
+  "genre": "Business",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e1b"
+  },
+  "title": "Connect the Dots",
+  "author": "Rashmi Bansal",
+  "year": 2010,
+  "genre": "Business",
+  "available": false
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e1c"
+  },
+  "title": "I Have a Dream",
+  "author": "Rashmi Bansal",
+  "year": 2011,
+  "genre": "Business",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e1d"
+  },
+  "title": "Half Girlfriend",
+  "author": "Chetan Bhagat",
+  "year": 2014,
+  "genre": "Romance",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e1e"
+  },
+  "title": "2 States",
+  "author": "Chetan Bhagat",
+  "year": 2009,
+  "genre": "Romance",
+  "available": false
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e1f"
+  },
+  "title": "The 3 Mistakes of My Life",
+  "author": "Chetan Bhagat",
+  "year": 2008,
+  "genre": "Fiction",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e20"
+  },
+  "title": "Five Point Someone",
+  "author": "Chetan Bhagat",
+  "year": 2004,
+  "genre": "Fiction",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e21"
+  },
+  "title": "One Indian Girl",
+  "author": "Chetan Bhagat",
+  "year": 2016,
+  "genre": "Fiction",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e22"
+  },
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "year": 1988,
+  "genre": "Fiction",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e23"
+  },
+  "title": "The Kite Runner",
+  "author": "Khaled Hosseini",
+  "year": 2003,
+  "genre": "Drama",
+  "available": false
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e24"
+  },
+  "title": "A Thousand Splendid Suns",
+  "author": "Khaled Hosseini",
+  "year": 2007,
+  "genre": "Drama",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e25"
+  },
+  "title": "And the Mountains Echoed",
+  "author": "Khaled Hosseini",
+  "year": 2013,
+  "genre": "Drama",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e26"
+  },
+  "title": "The Fault in Our Stars",
+  "author": "John Green",
+  "year": 2012,
+  "genre": "Romance",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "684c458016ab236c5c063e27"
+  },
+  "title": "Looking for Alaska",
+  "author": "John Green",
+  "year": 2005,
+  "genre": "Young Adult",
+  "available": true
+}]
